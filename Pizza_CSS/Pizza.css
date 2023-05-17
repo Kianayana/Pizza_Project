@@ -4,6 +4,8 @@
     margin:10px auto;
 }
 
+/*This shows the size of the menu used for online ordering.
+The width and height of the lists of sizes and toppings correlates with this width and height.*/
 #frmMenu {
     width:600px;
     height:200px;
@@ -15,7 +17,7 @@
     margin:20px auto;
     float:right;
 }
-
+/*This properly aligns the selections while staying at the same height*/
 .left {
     width:200px;
     height:200px;
@@ -33,7 +35,7 @@
     height:200px;
     float:right;
 }
-
+/*This aligns the total for the pizza order*/
 #showText {
     width:200px;
     height:190px;
@@ -55,7 +57,7 @@
     display: block;
     margin: 25px auto;
 }
-
+/*This was the assignment for adding CSS to these elements*/
 body {
     background-color: lightseagreen;
 }

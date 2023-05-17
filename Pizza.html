@@ -9,10 +9,12 @@
     </head>
     <body>
         <div id="menuBG">
-            <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+            <h1 style="margin:0 0px 0 20px;">Gigi Luigi's Pizza</h1>
+            <!--This button will submit the selections made for the single pizza-->
             <input id="btnOrder" type="button" onclick="getReceipt()"
                 value="Place Order">
             <form id="frmMenu">
+                <!--This will show pizza sizes-->
                 <div class="menu left">
                     <h3>Size:</h3>
                     <input class="size" type="radio" name="Size"
@@ -24,6 +26,7 @@
                     <input class="size" type="radio" name="Size"
                         value="Extra Large Pizza">Extra Large Pizza<br>
                 </div>
+                <!--This will show available meat toppings-->
                 <div class="menu right">
                     <h3>Meats:</h3>
                     <input class="toppings" type="checkbox" name="Topping"
@@ -39,6 +42,7 @@
                     <input class="toppings" type="checkbox" name="Topping"
                         value="Chicken">Chicken<br>
                 </div>
+                <!--This will show available vegetable toppings-->
                 <div class="menu center">
                     <h3>Vegetables: </h3>
                     <input class="toppings" type="checkbox" name="Topping"
@@ -52,6 +56,7 @@
                     <input class="toppings" type="checkbox" name="Topping"
                         value="Green Peppers">Green Peppers<br>
                 </div>
+                <!--This shows the total of your single pizza-->
                 <div id="cart">
                     <div id="showText"></div>
                     <div id="totalPrice"></div>

@@ -10,7 +10,7 @@ function getReceipt() {
             var selectedSize = sizeArray[i].value;
             text1 = text1+selectedSize+"<br>";
         }
-    }
+    }//This shows what pizza size was selected and it's corresponding price
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
@@ -30,6 +30,7 @@ function getReceipt() {
     getTopping(runningTotal,text1);
 };
 
+//This function adds $1 to the totla for every topping chosen
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
@@ -41,6 +42,7 @@ function getTopping(runningTotal,text1) {
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
+    //This function will give the user the total of their pizza selection
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
         toppingTotal = (toppingCount - 1);
